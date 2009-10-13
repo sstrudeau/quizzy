@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>quizzy: jQuery quiz plugin demo</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.quizzy.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('#quizzy').quizzy({
+				questions: [
+					{ q: 'Does your home support everything you want to do?' },
+					{ q: 'Do you use your home often?'	},	
+					{ q: 'Is there room for everything you want to do at home?'	},
+					{ q: 'Is there good space for what is most important to you?'},
+					{ q: 'Do you consider your home beautiful?'},	
+					{ q: 'Do you feel you have a sense of style?'},
+					{ q: 'Does your clothing express your style?'},
+					{ q: 'Does your home express your style?'},
+					{ q: 'Do you consider your home comfortable?'},
+					{ q: 'Do you sleep well at night?'},
+					{ q: 'Is your apartment organized'},
+					{ q: 'Is it easy to clean & declutter'},
+					{ q: 'Do you consider your home to be in good shape?'},
+					{ q: 'Is everything in good working order?'},
+					{ q: 'Do you take care of repairs quickly?'},
+					{ q: 'Do you clean your home often?'}
+				],
+				results: [
+					{ min: 0, max: 3,	r: 'Very ill. Depressing. Serious problems that are harmful to your health.' },
+					{ min: 4, max: 7,	r: 'Weak. Energy Drain. Visible problems in need of work have probably been put off for some time.' },
+					{ min: 8, max: 11,	r: 'Healthy. Comfortable. Could use improvement in at least one area and toning all around.' },
+					{ min: 12, max: 16,	r: 'Excellent health. Invigorating. Occasional updating and ongoing maintenance are all that is needed.' }
+				]
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>quizzy: jQuery quiz plugin demo</h1>
+	<div id="quizzy"></div>
+</body>
+</html>
